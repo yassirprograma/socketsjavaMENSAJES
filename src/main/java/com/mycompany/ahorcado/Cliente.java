@@ -16,7 +16,7 @@ public class Cliente {
             String dir=""; //CADENA PARA LEER LA IP
             
             try{
-                System.out.println("Escribe la direccion del servidor:"); 
+                System.out.println("Escribe la direccion del servidor :"); 
                 dir = br.readLine();  //Leemos COMO CADENA la dirección del server (DESDE TECLADO)
                 host = InetAddress.getByName(dir); //Pasa de CADENA al formato de dirección IP
             }catch(Exception n){
@@ -25,7 +25,7 @@ public class Cliente {
 
             Socket cl = new Socket(host,pto); //Establecemos conexión con el servidor mediante el socket (INSTANCIAMOS EL SOCKET CLIENTE)
             
-            System.out.println("Conexion con el servidor "+dir+":"+pto+" establecida\n"); //IMPRIMIMOS QUE SE HA CONECTADO CON EL SERVER
+            System.out.println("Conexion establecida con el servidor del juego\n"); //IMPRIMIMOS QUE SE HA CONECTADO CON EL SERVER
             
             
             //CREAMOS BUFFERS PARA LECTURA Y ESCRITURA DEL SOCKET
